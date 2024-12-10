@@ -82,3 +82,8 @@ VALUES ("Bullet Train", "action", "2022", "206", "PG");
 SELECT * 
 FROM movie 
 WHERE genr = 'comedy';
+
+--Mise à jour des abonnements : Passer tous les utilisateurs de "Basic" à "Premium"
+
+UPDATE subscription
+SET subscriptionTYPE = 'premium'
