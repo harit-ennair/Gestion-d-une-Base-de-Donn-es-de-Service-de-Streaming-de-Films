@@ -99,3 +99,14 @@ INNER JOIN subscription ON users.subscriptionID=subscription.subscriptionID;
 SELECT *
 FROM watchhistory
 WHERE completionpercentage = 100
+
+--Trier et limiter : Afficher les 5 films les plus longs, triés par durée
+
+SELECT * 
+FROM movie
+ORDER BY duration DESC
+LIMIT 5
+
+
+
+
