@@ -71,3 +71,8 @@ CREATE TABLE watchhistory(
     watchDATE DATE NOT NULL,
     completionpercentage INT DEFAULT 0
 );
+
+--Insérer un film
+
+INSERT INTO movie (title, genr, releaseyear, duration, rating)
+VALUES ("Bullet Train", "action", "2022", "206", "PG");
