@@ -90,7 +90,12 @@ SET subscriptionTYPE = 'premium'
 
 --Afficher les abonnements : Joindre les utilisateurs à leurs types d'abonnements
 
-
 SELECT users.lastNAME, users.firstNAME, subscription.subscriptionTYPE
 FROM users
 INNER JOIN subscription ON users.subscriptionID=subscription.subscriptionID;
+
+--Filtrer les visionnages : Trouver tous les utilisateurs ayant terminé de regarder un film
+
+SELECT *
+FROM watchhistory
+WHERE completionpercentage = 100
