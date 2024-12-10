@@ -114,5 +114,10 @@ FROM watchhistory
 join movie on movie.movieID = watchhistory.movieID
 GROUP BY watchhistory.movieID , CompletionPercentage ;
 
+--Group By : Grouper les utilisateurs par type d’abonnement et compter le nombre total d’utilisateurs par groupe
+
+SELECT COUNT(subscriptionID), subscriptionTYPE
+FROM subscription
+GROUP BY subscriptionTYPE
 
 
