@@ -72,7 +72,13 @@ CREATE TABLE watchhistory(
     completionpercentage INT DEFAULT 0
 );
 
---Insérer un film
+--Insérer un film: Ajouter un nouveau film intitulé Data Science Adventures dans le genre "Documentary"
 
 INSERT INTO movie (title, genr, releaseyear, duration, rating)
 VALUES ("Bullet Train", "action", "2022", "206", "PG");
+
+--Rechercher des films : Lister tous les films du genre "Comedy" sortis après 2020
+
+SELECT * 
+FROM movie 
+WHERE genr = 'comedy';
